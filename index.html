@@ -1,11 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script defer src="assets/fontawesome/js/brands.js"></script>
+	<script defer src="assets/fontawesome/js/solid.js"></script>
+	<script defer src="assets/fontawesome/js/fontawesome.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+	<title></title>
 </head>
 <body>
 
+	<header>
+		<nav>
+			<img src="images/logo/Booki.png" alt="Logo Booki" class="logo">
+			<div class="menu">
+				<ul>
+					<li><a href="#">Hébergements</a></li>
+					<li><a href="#">Activités</a></li>
+				</ul> 
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="acceuil-intro">
+			<div>
+				<h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+				<p>
+					En plein centre-ville ou en pleine nature
+				</p>
+			</div>
+		</section>
+
+		<section class="search">
+			<div class="search-form">
+				<form>
+					<label for="ville-search"><i class="fa-solid fa-location-dot"></i>
+					<input type="text" id="ville-search" name="ville-search"></label>
+					<input type="submit" value="Rechercher">
+				</form> 
+			</div>
+		</section>
+
+		<section class="offers">
+
+			<div class="offers-main">
+
+				<div><h1>Hébergement à Marseille</h1></div>
+
+				<div class="article-offers">
+					<article class="card-main">
+						<div class="offers-img-marcus offers-img"></div>
+						<header>Auberge La Canebiére</header>
+						<p class="offers-card-tarif"> Nuit à partir de 25€</p>
+						<div class="offers-card-star">
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-grey"></i>
+						</div>
+					</article>
+
+					<article class="card-main">
+						<div class="offers-img-kleber offers-img"></div>
+						<header>Hôtel du port</header>
+						<p class="offers-card-tarif"> Nuit à partir de 52€</p>
+						<div class="offers-card-star">
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-grey"></i>
+						</div>
+					</article>
+
+					<article class="card-main">
+						<div class="offers-img-reisetopia offers-img"></div>
+						<header>Hôtel Les mouettes</header>
+						<p class="offers-card-tarif"> Nuit à partir de 76€</p>
+						<div class="offers-card-star">
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-grey"></i>
+						</div>
+					</article>
+				</div>
+				<!-- /////////////////////////////////////////////////// -->
+				<!--/////////////// 2° ligne /////////////////////////// -->
+				<!-- /////////////////////////////////////////////////// -->
+				<div class="article-offers">
+					<article class="card-main">
+						<div class="offers-img-spratt offers-img"></div>
+						<header>Hôtel de la mer</header>
+						<p class="offers-card-tarif"> Nuit à partir de 46€</p>
+						<div class="offers-card-star">
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-grey"></i>
+						</div>
+					</article>
+
+					<article class="card-main">
+						<div class="offers-img-lee offers-img"></div>
+						<header>Auberge Le Panier</header>
+						<p class="offers-card-tarif"> Nuit à partir de 23€</p>
+						<div class="offers-card-star">
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-grey"></i>
+						</div>
+					</article>
+
+					<article class="card-main">
+						<div class="offers-img-zakaria offers-img"></div>
+						<header>Hôtel Chez Amina</header>
+						<p class="offers-card-tarif"> Nuit à partir de 96€</p>
+						<div class="offers-card-star">
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-blue"></i>
+							<i class="fa-solid fa-star star-grey"></i>
+						</div>
+					</article>
+				</div>
+
+				<h2>Afficher plus</h2>
+			</div>
+
+			<div class="offers-sponsored">
+				<div><h1>Les plus populaires <i class="fa-solid fa-chart-line"></i></h1>
+				</div>
+
+				<div class="article-sponsored">
+					<article class="card-main-sponsored">
+						<div class="sponsored-img-soleil sponsored-img"></div>
+						<div class="card-sponsored">
+							<header>Hôtel Le soleil du matin</header>
+							<p class="sponsored-card-tarif"> Nuit à partir de 128€</p>
+							<div class="sponsored-card-star">
+								<i class="fa-solid fa-star star-blue"></i>
+								<i class="fa-solid fa-star star-blue"></i>
+								<i class="fa-solid fa-star star-blue"></i>
+								<i class="fa-solid fa-star star-blue"></i>
+								<i class="fa-solid fa-star star-grey"></i>
+							</div>
+						</div>
+					</article>
+
+					<article class="card-main-sponsored">
+						<div class="sponsored-img-creative sponsored-img"></div>
+						<div class="card-sponsored">
+							<header>Chambres d'hôtes Au c&#339;ur de l'eau</header>
+							<p class="sponsored-card-tarif"> Nuit à partir de 71€</p>
+							<div class="sponsored-card-star">
+								<i class="fa-solid fa-star star-blue"></i>
+								<i class="fa-solid fa-star star-blue"></i>
+								<i class="fa-solid fa-star star-blue"></i>
+								<i class="fa-solid fa-star star-blue"></i>
+								<i class="fa-solid fa-star star-grey"></i>
+							</div>
+						</div>
+					</article>
+
+					<article class="card-main-sponsored">
+						<div class="sponsored-img-zakaria sponsored-img"></div>
+						<div class="card-sponsored">
+							<header>Hôtel Bleu et Blanc</header>
+							<p class="sponsored-card-tarif"> Nuit à partir de 68€</p>
+							<div class="sponsored-card-star">
+								<i class="fa-solid fa-star star-blue"></i>
+								<i class="fa-solid fa-star star-blue"></i>
+								<i class="fa-solid fa-star star-blue"></i>
+								<i class="fa-solid fa-star star-blue"></i>
+								<i class="fa-solid fa-star star-grey"></i>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+
+		</section>
+	</main>
 </body>
 </html>
