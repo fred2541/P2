@@ -1,0 +1,320 @@
+body {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: center;
+	font-family: 'Raleway', sans-serif;
+	font-style: normal;
+	max-width: 1400px;
+	margin: 0px auto;
+/*	padding: 0px 50px 0px 50px;*/
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	flex-basis: 100%;
+	padding-top: 48px;
+}
+
+nav a {
+	color: #000000;
+	text-decoration: none;
+	padding: 46px 16px;
+}
+
+nav a:hover {
+	color: #0065FC;
+	border-top:2px solid #0065FC;
+}
+
+.menu ul {
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+}
+
+body .header {
+	display: flex;
+	flex-basis: 100%;
+}
+
+.logo {
+	width: 61px;
+	height: 19px;
+}
+
+main {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+}
+
+.acceuil-intro {
+	display: flex;
+	flex-basis: 100%;
+	margin-top: 63px;
+}
+
+.search-form {
+	margin-bottom: 10px;
+}
+
+.search-form input[type=submit] {
+	width: 132px;
+	height: 49px;
+	border: none;
+	background-color: #0065FC;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #FFFFFF;
+	border-radius: 0px 20px 20px 0px;
+}
+
+.search-form label {
+	display:inline-block;
+	height: 49px;
+  background: #F2F2F2;
+  border: 1px solid #F2F2F2;
+	border-radius: 15px 0px 0px 15px;
+}
+
+.search-form input[type=text] {
+	height: 49px;
+	background: #FFFFFF;
+	border: 1px solid #F2F2F2;
+	border-radius: 15px;
+}
+
+.fa-location-dot {
+	width: 14px;
+	height: 18px;
+}
+
+h1 {
+	font-size: 22px;
+	flex-basis: 100%;
+}
+
+h2 {
+	font-size: 18px;
+	flex-basis: 100%;
+	margin: 0px;
+
+}
+
+p {
+	font-size: 16px;
+}
+
+.offers {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.offers-main {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	flex-direction: column;
+	padding-left: 40px;
+	padding-bottom: 46px;
+	background: #F2F2F2;
+	border-radius: 20px;
+}
+
+.article-offers {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-main {
+	padding-bottom: 11px;
+	margin-right: 31px;
+	margin-bottom: 32px;
+	background: #ffffff;
+	width: 246px;
+	height: 199px;
+	border-radius: 20px;
+}
+
+.offers-img-marcus {
+	background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+
+.offers-img-kleber {
+	background-image: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+
+.offers-img-reisetopia {
+	background-image: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+
+.offers-img-spratt {
+	background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+
+.offers-img-lee {
+	background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+.offers-img-zakaria {
+	background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+.offers-img {
+	background-size: 105%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 20px 20px 0px 0px;
+    border: 5px solid #ffffff;
+	height: 114px; /*10px de - pour compenser le border!!!*/
+    width: 236px;  /*  """" */
+}
+
+.card-main header {
+	margin-left: 16px;
+	font-size: 16px;
+
+}
+
+.offers-card-tarif {
+	margin-top: 9px;
+	margin-bottom: 0px;
+	margin-left: 16px;
+	font-size: 16px;
+}
+
+.offers-card-star {
+	margin-top: 9px;
+	margin-left: 16px;
+}
+
+.fa-star {
+	width: 12px;
+	height: 12px;
+}
+
+.star-blue {
+  color: #0065FC;
+}
+
+.star-grey {
+  color: #F2F2F2;
+}
+
+/*/////////////////*/
+/*offers-sponsored*/
+/*////////////////*/
+
+.offers-sponsored {
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-left: 5px;
+	background: #F2F2F2;
+	border-radius: 20px;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+}
+
+.article-sponsored {
+	display: flex;
+	flex-direction: column;
+	height: 144px;
+	width: 343px;
+}
+
+.card-main-sponsored {
+	display: flex;
+	background: #ffffff;
+	width: 343px;
+	height: 144px;
+	margin-bottom: 33px;
+	border-radius: 20px;
+}
+
+.card-sponsored {
+	display: flex;
+/*	flex-wrap: nowrap;*/
+justify-content: flex-start;
+	flex-direction: column;
+	height: 133px;
+	padding-bottom: 11px;
+	margin-right: 31px;
+	background: #ffffff;
+	border-radius: 20px;
+
+}
+
+.offers-sponsored header {
+	display: flex;
+	margin-left: 15px;
+	margin-top: 16px;
+	width: 169px;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+
+}
+
+.sponsored-card-tarif {
+	display: flex;
+	width: 169px;
+	margin-top: 7px;
+	margin-left: 15px;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: #000000;
+}
+
+.sponsored-card-star {
+	display: flex;
+	margin-top: auto;
+	margin-left: 15px;
+}
+
+.sponsored-img-soleil {
+	background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+.sponsored-img-creative {
+	background-image: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+
+.sponsored-img-zakaria {
+	background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+}
+
+
+.sponsored-img {
+	background-size: 170%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 20px 0px 0px 20px;
+    border: 5px solid #ffffff;
+	height: 134px; /*10px de - pour compenser le border!!!*/
+    width: 127px;  /*  """" */
+}
+
+.fa-chart-line {
+  color: #0065FC;
+  float: right;
+}
