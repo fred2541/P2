@@ -1,0 +1,20 @@
+/*main > section > div {*/
+/*	display: flex;*/
+/*}*/
+
+.search-filter {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px; /* A VERIFIER L'ALIGNEMENT !!!!!!!!!!!!!*/
+}
+
+.search-filter > div {
+	display: flex;
+	align-items: center;
+	border: 2px solid #D9D9D9;
+	border-radius: 25px;
+}
+
+.fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog {
+  color: #0065FC;
+}
