@@ -1,0 +1,13 @@
+body {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: center;
+	font-family: 'Raleway', sans-serif;
+	font-style: normal;
+	max-width: 1400px;
+	margin: 0px auto;
+/*	padding: 0px 50px 0px 50px;*/
+	padding-left: 50px;
+	padding-right: 50px;
+}
