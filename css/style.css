@@ -22,10 +22,24 @@ h1 {
 
 h2 {
 	font-size: 18px;
+	margin: 0px;
+	margin-bottom: 23px;
 }
 
 main > section > p {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
+}
+
+main > section > section > div {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+main > section + section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
