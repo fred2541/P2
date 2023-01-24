@@ -23,7 +23,38 @@ h1 {
 h2 {
 	font-size: 18px;
 	margin: 0px;
+}
+
+main > section:nth-child(1) {
+		margin-top: 63px;
+}
+
+main > section:nth-child(2) {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 39px;
+}
+
+main > section:nth-child(2) > section > div > h2 {
 	margin-bottom: 23px;
+}
+
+main > section:nth-child(3) {
+		margin-top: 60px;
+		display: flex;
+		flex-direction: column;
+
+}
+
+main > section:nth-child(3) > div > h2 {
+	margin-bottom: 19px;
+}
+
+main > section:nth-child(3) > div > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 main > section > p {
@@ -36,10 +67,4 @@ main > section > section > div {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-}
-
-main > section + section {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 }
