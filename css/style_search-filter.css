@@ -1,13 +1,10 @@
-/*main > section > div {*/
-/*	display: flex;*/
-/*}*/
-
 .search-filter {
 	display: flex;
-	justify-content: space-between;
+/*	justify-content: space-between;*/
 	flex-direction: row;
+	align-items: center;
 	margin-top: 20px; /* A VERIFIER L'ALIGNEMENT !!!!!!!!!!!!!*/
-	width: 66%;
+	width: 100%;
 }
 
 .search-filter > div {
@@ -21,6 +18,7 @@
 	padding-bottom: 12px;
 	padding-left: 18px;
 	padding-right: 18px;
+	margin-left: 40px;
 }
 
 .search-filter > div:hover {
