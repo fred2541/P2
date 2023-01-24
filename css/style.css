@@ -68,3 +68,23 @@ main > section > section > div {
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+
+footer {
+	display: flex;
+	background: #F2F2F2;
+	padding-left: 70px;
+}
+
+footer > div {
+	width: 33%;
+	margin-top: 45px;
+}
+
+footer ul {
+	display: flex;
+	list-style-type: none;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-bottom: 58px;
+	padding-left: 0px;
+}

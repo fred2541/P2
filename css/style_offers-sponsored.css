@@ -24,6 +24,7 @@ main > section > section:nth-child(2) > div:first-child {
 	max-width: 343px;	
 }
 
+footer > div > div,
 main > section > section:nth-child(1) > div:last-child {
 	font-weight: 700;
 	font-size: 18px;
