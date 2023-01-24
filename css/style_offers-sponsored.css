@@ -6,17 +6,22 @@ main > section > section:nth-child(1) {
 	border-radius: 20px;
 	width: 60%;
 	padding-top: 42px;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 3%;
+	padding-right: 3%;
+	margin-right: 10px;
 }
 
 main > section > section:nth-child(2) {
 	background: #F2F2F2;
 	border-radius: 20px;
-	width: 25%;
+	width: 30%;
 	padding-top: 41px;
-	padding-left: 37px;
-	padding-right: 40px;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+main > section > section:nth-child(2) > div:first-child {
+	max-width: 343px;	
 }
 
 main > section > section:nth-child(1) > div:last-child {
@@ -32,10 +37,10 @@ main > section > section:nth-child(1) > div:last-child {
   transition: 0.3s;
   
   display: flex;
-  
-/*  justify-content: space-between;*/
   border-radius: 20px;
   background: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -70,20 +75,24 @@ main > section > section:nth-child(1) > div:last-child {
 
 .hebergements {
 	flex-direction: column;
-	width: 246px;
-  	height: 199px;
+	max-width: 246px;
+	width: 32%;
+  height: 199px;
 	margin-bottom: 30px;
+	padding-bottom: 10px;
 }
 
 .sponsored {
-	width: 343px;
-  	height: 144px;
-  	margin-bottom: 33px;
+	width: 100%;
+	max-width: 343px;
+  height: 144px;
+  margin-bottom: 33px;
 }
 
 .hebergements > img {
+/*	display: flex;*/
 	height: 114px;
-	width: 96%;
+	width: auto;
 	object-fit: cover;
 	border: 5px solid #FFFFFF;
 	border-radius: 20px 20px 0px 0px;
@@ -91,7 +100,7 @@ main > section > section:nth-child(1) > div:last-child {
 
 .sponsored > img {
 	height: 134px;
-	width: 60%;
+	width: 40%;
 	object-fit: cover;
 	border: 5px solid #FFFFFF;
 	border-radius: 20px 0px 0px 20px;
@@ -103,15 +112,14 @@ main > section > section:nth-child(1) > div:last-child {
 	justify-content: space-between;
 	flex-basis: 100%;
 	padding-top: 4px;
-	padding-bottom: 11px;
 	padding-left: 16px;
 }
 
 .sponsored > div {
 	display: flex;
 	flex-direction: column;
-/*	justify-content: space-between;*/
-	flex-basis: 100%;
+	justify-content: space-between;
+	width: 60%;
 	padding-top: 16px;
 	padding-bottom: 12px;
 }
@@ -121,7 +129,7 @@ main > section > section:nth-child(1) > div:last-child {
 	margin: 0px;
 }
 .sponsored > div > * {
-	padding-left: 15px;
+/*	padding-left: 15px;*/
 	margin: 0px;
 }
 
