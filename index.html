@@ -20,8 +20,8 @@
 			<img src="assets/images/logo/Booki.png" alt="Logo Booki">
 			<div>
 				<ul>
-					<li><a href="#">Hébergements</a></li>
-					<li><a href="#">Activités</a></li>
+					<li><a href="#hebergements">Hébergements</a></li>
+					<li><a href="#activites">Activités</a></li>
 				</ul> 
 			</div>
 		</nav>
@@ -36,22 +36,25 @@
 				<form>
 					<div><i class="fa-solid fa-location-dot"></i></div>
 					<input type="text" id="ville-search" name="ville-search" placeholder="Marseille, France">
-					<input type="submit" value="Rechercher">
+					<button type="submit"><i class="fa-solid fa-magnifying-glass loupe"></i></button>
+
 				</form>
 			</div>
 
 			<div class="search-filter"> <!-- filtre de recherche -->
-				<h2>Filtres</h2>
-				<div><i class="fa-solid fa-money-bill-wave"></i>&Eacute;conomique</div>
-				<div><i class="fa-solid fa-person"></i>Familial</div>
-				<div><i class="fa-solid fa-heart"></i>Romantique</div>
-				<div><i class="fa-solid fa-dog"></i>Animaux autorisés</div>
+				<span>Filtres</span>
+				<div>
+					<div><i class="fa-solid fa-money-bill-wave"></i>&Eacute;conomique</div>
+					<div><i class="fa-solid fa-person"></i>Familial</div>
+					<div><i class="fa-solid fa-heart"></i>Romantique</div>
+					<div><i class="fa-solid fa-dog"></i>Animaux autorisés</div>
+				</div>
 			</div> <!-- fin filtre recherche -->
 
 			<div><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</div>
 		</section>
 
-		<section>  <!-- bloc hebergement et les plus populaires -->
+		<section id="hebergements">  <!-- bloc hebergement et les plus populaires -->
 
 			<section><!-- /* hebergement */ -->
 				<div><h2>Hébergement à Marseille</h2></div>
@@ -200,11 +203,11 @@
 
 		</section>
 
-		<section>  <!-- bloc activites a marseille	 -->
+		<section id="activites">  <!-- bloc activites a marseille	 -->
 			<div><h2>Activités à Marseille</h2></div>
 			<div>
-			<div>  <!-- card activité -->
-				<article class="card activites">
+				<div>  <!-- card activité -->
+					<article class="card activites">
 						<img src="assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux-Port">
 						<div>
 							<h3>Vieux-Port</h3>
@@ -231,9 +234,9 @@
 							<h3>Notre-Dame-de-la-Garde</h3>
 						</div>
 					</article>
+				</div>
 			</div>
-			</div>
-		
+			
 		</section>
 
 	</main>

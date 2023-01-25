@@ -7,7 +7,6 @@ body {
 	font-style: normal;
 	max-width: 1400px;
 	margin: 0px auto;
-/*	padding: 0px 50px 0px 50px;*/
 	padding-left: 50px;
 	padding-right: 50px;
 }
@@ -21,7 +20,9 @@ h1 {
 }
 
 h2 {
-	font-size: 18px;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
 	margin: 0px;
 }
 
@@ -54,6 +55,9 @@ header > nav > div > ul > li > a {
 	color: #000000;
 	text-decoration: none;
 	padding: 46px 16px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
 }
 
 header > nav > div > ul > li > a:hover {
@@ -74,28 +78,41 @@ main > section:nth-child(2) {
 
 .search-filter {
 	display: flex;
-/*	justify-content: space-between;*/
 	flex-direction: row;
 	align-items: center;
 	margin-top: 20px; /* A VERIFIER L'ALIGNEMENT !!!!!!!!!!!!!*/
-	width: 100%;
+}
+
+.search-filter > span {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
 }
 
 .search-filter > div {
+	display: flex;
+	flex-basis: 100%;
+}
+
+.search-filter > div > div {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-items: center;
 	border: 2px solid #D9D9D9;
 	border-radius: 25px;
+	margin-left: 4%;
 	padding-top: 12px;
 	padding-bottom: 12px;
-	padding-left: 18px;
-	padding-right: 18px;
-	margin-left: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 20px;
+	cursor: pointer;
 }
 
-.search-filter > div:hover {
+.search-filter > div > div:hover {
 	background: #DEEBFF;
 }
 
@@ -132,6 +149,7 @@ main > section:nth-child(3) {
 		margin-top: 60px;
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 60px;
 
 }
 
@@ -243,8 +261,8 @@ main > section > section:nth-child(1) > div:last-child {
   height: 199px;
 	margin-bottom: 30px;
 	padding-bottom: 10px;
-	margin-left: auto;
-  margin-right: auto;
+/*	margin-left: auto;*/
+/*  margin-right: auto;*/
 }
 
 .sponsored {
@@ -315,8 +333,6 @@ main > section > section:nth-child(1) > div:last-child {
 	flex-direction: column;
 	max-width: 302px;
 	width: 24%;
-	margin-bottom: 30px;
-	padding-bottom: 10px;
 }
 
 .activites > img {
@@ -333,6 +349,7 @@ main > section > section:nth-child(1) > div:last-child {
 
 footer {
 	display: flex;
+	justify-content: space-between;
 	background: #F2F2F2;
 	padding-left: 70px;
 }
@@ -361,8 +378,7 @@ main > section > div > form > div {
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: center;
-/*	flex-basis: 100%;*/
-	background-color: #0065FC;
+	background-color: #F2F2F2;
 	width: 50px;
 	height: 49px;
 	border-radius: 15px 0px 0px 15px;
@@ -390,7 +406,7 @@ main > section > div > form > input[type=text]::placeholder {
 	color: #000000;
 }
 
-main > section > div > form > input[type=submit] {
+main > section > div > form > button[type=submit] {
 	width: 132px;
 	height: 49px;
 	border: none;
@@ -405,4 +421,175 @@ main > section > div > form > input[type=submit] {
 	padding-left: 16px;
 	padding-right: 16px;
 	border-radius: 0px 20px 20px 0px;
+	cursor: pointer;
 }
+main > section > div > form > button[type=submit]::after {
+	content: "Rechercher";
+}
+.loupe {
+	display: none;
+}
+
+/*	tablette*/
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+header > nav > div > ul > li > a:hover {
+	color: initial;
+	border-top: initial;
+}
+
+.search-filter {
+	justify-content: space-between;
+}
+
+.search-filter > div > div {
+	margin-left: initial;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+main > section:nth-child(1) {
+	margin-top: 58px;
+}
+
+main > section:nth-child(2) {
+	flex-direction: column;
+}
+
+main > section > section:nth-child(1) {
+	width: auto;
+	margin-right: 0px;
+	padding-bottom: 46px;
+}
+
+main > section > section:nth-child(2) {
+		margin-top: 53px;
+		width: auto;
+		padding-top: 34px;
+}
+
+main > section > section:nth-child(2) > div:first-child {
+	flex-wrap: nowrap;
+	max-width: 802px;
+}
+
+main > section > section:nth-child(2) > div:last-child {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 100%;
+	max-width: 802px;
+}
+
+.sponsored {
+	width: 33%;
+	max-width: 252px;
+	margin-right: initial;
+	margin-left: initial;
+}
+
+main > section:nth-child(3) {
+	margin-top: 70px;
+	margin-bottom: 69px;
+}
+
+main > section:nth-child(3) > div > h2 {
+	margin-bottom: 34px;
+}
+
+.activites {
+	max-width: 182px;
+}
+
+.activites > img {
+	height: 211px;
+}
+
+footer {
+	padding-left: 9%;
+}
+
+footer > div {
+	width: 30%;
+}
+
+} /*fin tablette*/
+
+
+
+
+/*	mobile*/
+@media all and (max-width: 767px) {
+
+body {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+main > section:first-child {
+	padding-left: 20px;
+	padding-right: 22px;
+}
+
+header > nav {
+	flex-direction: column;
+	padding-top: 21px;
+}
+
+header > nav > div {
+	width: 100%;
+	margin-top: 49px;
+}
+
+header > nav > div > ul {
+/*	justify-content: space-around;*/
+}
+
+header > nav > div > ul > li {
+	width: 50%;
+}
+
+header > nav > div > ul > li > a {
+	display: flex;
+	justify-content: center;
+	padding: initial;
+	margin-bottom: 23px;
+}
+
+header > nav > div > ul > li > a:hover {
+	border: initial;
+	border-bottom: 2px solid #0065FC;
+	margin-bottom: 0px;
+	padding-bottom: 21px;
+}
+
+.loupe {
+	display: inline;
+}
+
+main > section > div > form > button[type="submit"] {
+	width: 49px;
+}
+
+main > section > div > form > button[type="submit"]::after {
+	content: initial;
+}
+
+.search-filter {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.search-filter > div {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	height: 117px;
+	width: 100%;
+	margin-top: 15px;
+}
+
+.search-filter > div > div {
+	width: 40%;
+}
+
+} /*fin mobile*/
