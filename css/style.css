@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
 body {
 	display: flex;
 	flex-wrap: nowrap;
@@ -12,8 +14,6 @@ body {
 }
 
 h1 {
-	font-family: 'Raleway';
-	font-style: normal;
 	font-weight: 700;
 	font-size: 22px;
 	line-height: 26px;
@@ -69,7 +69,7 @@ main > section:nth-child(1) {
 		margin-top: 63px;
 }
 
-main > section:nth-child(2) {
+main > div {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -80,7 +80,7 @@ main > section:nth-child(2) {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-top: 20px; /* A VERIFIER L'ALIGNEMENT !!!!!!!!!!!!!*/
+	margin-top: 30px;
 }
 
 .search-filter > span {
@@ -139,13 +139,16 @@ main > section:nth-child(2) {
 	flex-direction: row;
 	align-items: center;
 	margin-top: 40px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
 }
 
-main > section:nth-child(2) > section > div > h2 {
+main > div > section > div > h2 {
 	margin-bottom: 23px;
 }
 
-main > section:nth-child(3) {
+main > section:last-child {
 		margin-top: 60px;
 		display: flex;
 		flex-direction: column;
@@ -153,29 +156,29 @@ main > section:nth-child(3) {
 
 }
 
-main > section:nth-child(3) > div > h2 {
+main > section:last-child > div > h2 {
 	margin-bottom: 19px;
 }
 
-main > section:nth-child(3) > div > div {
+main > section:last-child > div > div {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-main > section > p {
+main > section > p { /*	AVOIR section avec le changement en div !!!!!*/
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
 }
 
-main > section > section > div {
+main > div > section > div {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
-main > section > section:nth-child(1) {
+main > div > section:first-child {  /*	bloc hebergement*/
 	display: flex;
 	flex-direction: column;
 
@@ -188,7 +191,7 @@ main > section > section:nth-child(1) {
 	margin-right: 10px;
 }
 
-main > section > section:nth-child(2) {
+main > div > section:last-child {  /*	bloc populaire*/
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -201,13 +204,14 @@ main > section > section:nth-child(2) {
 	padding-right: 3%;
 }
 
-main > section > section:nth-child(2) > div:first-child {
+main > div > section:last-child > div:first-child {
 	width: 100%;
 	max-width: 343px;
 }
 
 footer > div > div,
-main > section > section:nth-child(1) > div:last-child {
+main > div > section:nth-child(1) > div:last-child {
+	margin-top: 10px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 21px;
@@ -234,35 +238,25 @@ main > section > section:nth-child(1) > div:last-child {
 	font-size: 16px;
 	line-height: 19px;
 	color: #000000;
+	margin: 0px;
 }
 
 .card p {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
+	margin: 0px;
 }
 
-.sponsored p {
-	padding-top: 9px;
-}
-
-.card > div > div { /*	fa-star*/
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-basis: 100%;
-	align-items: flex-end;
-}
 
 .hebergements {
 	flex-direction: column;
 	max-width: 246px;
 	width: 32%;
-  height: 199px;
+/*  height: 199px;*/
+	min-height: 199px;
+/*	height: min-content;*/
 	margin-bottom: 30px;
-	padding-bottom: 10px;
-/*	margin-left: auto;*/
-/*  margin-right: auto;*/
 }
 
 .sponsored {
@@ -272,6 +266,10 @@ main > section > section:nth-child(1) > div:last-child {
   margin-bottom: 33px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.sponsored > div > div > p {
+	margin-top: 7px;
 }
 
 .hebergements > img {
@@ -299,6 +297,10 @@ main > section > section:nth-child(1) > div:last-child {
 	padding-left: 16px;
 }
 
+.hebergements > div > div:last-child {
+	margin-bottom: 11px;
+}
+
 .sponsored > div {
 	display: flex;
 	flex-direction: column;
@@ -306,12 +308,34 @@ main > section > section:nth-child(1) > div:last-child {
 	width: 60%;
 	padding-top: 16px;
 	padding-bottom: 12px;
+	margin-left: 10px;
+	margin-right: 5px;
 }
 
-.hebergements > div *{
-/*	*/
-	margin: 0px;
+.sponsored > div > div:first-child {
+	display: flex;
+	flex-direction: column;
+	height: 50%;
 }
+
+.hebergements > div { /* DOUBLOND ?????  */
+	/*margin: 0px;
+	height: 33%;*/
+}
+
+/*.card > div > div { /*	bloc fa-star*/
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+/*	flex-basis: 100%;*/
+	align-items: center;
+}*/
+
+.fa-star {
+	height: 12px;
+	width: 12px;
+}
+
 .sponsored > div > * {
 /*	padding-left: 15px;*/
 	margin: 0px;
@@ -332,7 +356,7 @@ main > section > section:nth-child(1) > div:last-child {
 .activites {
 	flex-direction: column;
 	max-width: 302px;
-	width: 24%;
+	width: 23%;
 }
 
 .activites > img {
@@ -344,6 +368,8 @@ main > section > section:nth-child(1) > div:last-child {
 }
 
 .activites > div > h3 {
+	margin-top: 20px;
+	margin-bottom: 21px;
 	padding-left: 19px;
 }
 
@@ -368,6 +394,13 @@ footer ul {
 	padding-left: 0px;
 }
 
+footer li {
+	margin-bottom: 12px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+}
+
 main > section > div > form {
 	display: flex;
 	width: 406px;
@@ -390,7 +423,7 @@ main > section > div > form > div {
 
 main > section > div > form > input[type=text] {
 	height: 47px;
-	width: 224px;
+	width: 208px;
 	padding: 0px;
 	background: #FFFFFF;
 	border: 0px;
@@ -399,7 +432,7 @@ main > section > div > form > input[type=text] {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 21px;
-	text-align: center;
+	padding-left: 16px;
 }
 
 main > section > div > form > input[type=text]::placeholder {
@@ -411,8 +444,6 @@ main > section > div > form > button[type=submit] {
 	height: 49px;
 	border: none;
 	background-color: #0065FC;
-	font-family: 'Raleway';
-	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 21px;
@@ -433,13 +464,19 @@ main > section > div > form > button[type=submit]::after {
 /*	tablette*/
 @media all and (min-width: 768px) and (max-width: 991px) {
 
+header > nav > div > ul > li > a {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+}
+
 header > nav > div > ul > li > a:hover {
 	color: initial;
 	border-top: initial;
 }
 
-.search-filter {
-	justify-content: space-between;
+.search-filter > div {
+	justify-content: space-around;
 }
 
 .search-filter > div > div {
@@ -448,51 +485,51 @@ header > nav > div > ul > li > a:hover {
 	padding-right: 9px;
 }
 
-main > section:nth-child(1) {
+main > section:first-child {
 	margin-top: 58px;
 }
 
-main > section:nth-child(2) {
+main > div {  /* bloc hebergement et populaire */
 	flex-direction: column;
 }
 
-main > section > section:nth-child(1) {
+main > div > section:first-child {
 	width: auto;
 	margin-right: 0px;
 	padding-bottom: 46px;
 }
 
-main > section > section:nth-child(2) {
+main > div > section:last-child {
 		margin-top: 53px;
 		width: auto;
 		padding-top: 34px;
 }
 
-main > section > section:nth-child(2) > div:first-child {
+main > div > section:last-child > div:first-child {
 	flex-wrap: nowrap;
-	max-width: 802px;
+	max-width: initial;
+	width: 100%;
 }
 
-main > section > section:nth-child(2) > div:last-child {
+main > div > section:last-child > div:last-child {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	width: 100%;
-	max-width: 802px;
 }
 
 .sponsored {
-	width: 33%;
+	width: 32%;
 	max-width: 252px;
 	margin-right: initial;
 	margin-left: initial;
 }
 
-main > section:nth-child(3) {
+main > section:last-child {
 	margin-top: 70px;
 	margin-bottom: 69px;
 }
 
-main > section:nth-child(3) > div > h2 {
+main > section:last-child > div > h2 {
 	margin-bottom: 34px;
 }
 
@@ -525,11 +562,6 @@ body {
 	padding-right: 0px;
 }
 
-main > section:first-child {
-	padding-left: 20px;
-	padding-right: 22px;
-}
-
 header > nav {
 	flex-direction: column;
 	padding-top: 21px;
@@ -541,7 +573,7 @@ header > nav > div {
 }
 
 header > nav > div > ul {
-/*	justify-content: space-around;*/
+	border-bottom: 2px solid #F2F2F2;
 }
 
 header > nav > div > ul > li {
@@ -566,6 +598,11 @@ header > nav > div > ul > li > a:hover {
 	display: inline;
 }
 
+main > section:first-child {
+	padding-left: 20px;
+	padding-right: 22px;
+}
+
 main > section > div > form > button[type="submit"] {
 	width: 49px;
 }
@@ -581,15 +618,91 @@ main > section > div > form > button[type="submit"]::after {
 
 .search-filter > div {
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: flex-start;
 	height: 117px;
 	width: 100%;
 	margin-top: 15px;
 }
 
-.search-filter > div > div {
-	width: 40%;
+.search-filter + div {
+	margin-top: 23px;  /*	40px - 17px utiliser dans filter-btn*/
+	margin-bottom: 17px;
 }
+
+.search-filter > div > div {
+/*	width: 40%;*/
+	min-width: 142px;
+	margin-left: initial;
+	margin-bottom: 17px;
+	font-weight: 700;
+	font-size: 11px;
+	line-height: 13px;
+}
+
+main > div {
+	flex-direction: column-reverse;
+	width: 100%;
+}
+
+/*bloc hebergement*/
+
+main > div > section:first-child {
+	align-items: center;
+	width: 100%;
+	padding: initial;
+	border-radius: initial;
+	background: initial;
+	padding-top: 26px;
+	padding-bottom: 47px;
+}
+
+main > div > section:first-child > div:first-child {
+	width: 90%;
+	max-width: 550px;
+}
+
+main > div > section:first-child > div:nth-child(2) {
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+}
+
+main > div > section:first-child > div:last-child {
+display: none;
+}
+
+.hebergements {
+	width: 100%;
+	max-width: 550px;
+}
+
+/*fin bloc hebergement*/
+/*///////////////////*/
+/*bloc populaire*/
+main > div > section:last-child {
+	width: 100%;
+	padding: initial;
+	border-radius: initial;
+	padding-top: 28px;
+	padding-bottom: 47px;
+}
+
+main > div > section:last-child > div:first-child {
+	width: 90%;
+	max-width: 550px;
+}
+
+main > div > section:last-child > div:last-child {
+	flex-direction: column;
+/*	justify-content: center;*/
+	width: 90%;
+}
+
+.sponsored {
+	max-width: 550px;
+}
+/*fin bloc populaire*/
+
 
 } /*fin mobile*/
