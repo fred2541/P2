@@ -26,6 +26,8 @@ h2 {
 	margin: 0px;
 }
 
+
+/* header nav + logo */
 header > nav {
 	display: flex;
 	flex-direction: row;
@@ -64,7 +66,10 @@ header > nav > div > ul > li > a:hover {
 	color: #0065FC;
 	border-top:2px solid #0065FC;
 }
+/* header nav + logo */
 
+
+/* intro + search-form + search-btn */
 main > section:nth-child(1) {
 		margin-top: 63px;
 }
@@ -144,32 +149,87 @@ main > div {
 	line-height: 19px;
 }
 
-main > div > section > div > h2 {
-	margin-bottom: 23px;
-}
-
-main > section:last-child {
-		margin-top: 60px;
-		display: flex;
-		flex-direction: column;
-		margin-bottom: 60px;
-
-}
-
-main > section:last-child > div > h2 {
-	margin-bottom: 19px;
-}
-
-main > section:last-child > div > div {
+main > section > div > form {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	width: 406px;
 }
+
+main > section > div > form > div {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	background-color: #F2F2F2;
+	width: 50px;
+	height: 49px;
+	border-radius: 15px 0px 0px 15px;
+}
+
+main > section > div > form > input[type=text] {
+	height: 47px;
+	width: 208px;
+	padding: 0px;
+	background: #FFFFFF;
+	border: 0px;
+	border-top: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+	padding-left: 16px;
+}
+
+main > section > div > form > input[type=text]::placeholder {
+	color: #000000;
+}
+
+main > section > div > form > button[type=submit] {
+	width: 132px;
+	height: 49px;
+	border: none;
+	background-color: #0065FC;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #FFFFFF;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 0px 20px 20px 0px;
+	cursor: pointer;
+}
+main > section > div > form > button[type=submit]::after {
+	content: "Rechercher";
+}
+.loupe {
+	display: none;
+}
+/* fin intro + search-form + search-btn */
+
+
+
+
+
+
 
 main > section > p { /*	AVOIR section avec le changement en div !!!!!*/
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+/* bloc hebergement et populaires */
+main > div > section > div > h2 {
+	margin-bottom: 23px;
 }
 
 main > div > section > div {
@@ -218,38 +278,6 @@ main > div > section:nth-child(1) > div:last-child {
 	color: #000000;
 }
 
-.card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  
-  display: flex;
-  border-radius: 20px;
-  background: #FFFFFF;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.card h3 {
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 19px;
-	color: #000000;
-	margin: 0px;
-	margin-bottom: 5px;
-}
-
-.card p {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 16px;
-	margin: 0px;
-}
-
-
 .hebergements {
 	flex-direction: column;
 	max-width: 246px;
@@ -267,10 +295,6 @@ main > div > section:nth-child(1) > div:last-child {
   margin-bottom: 33px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.sponsored > div > div > p {
-	margin-top: 7px;
 }
 
 .hebergements > img {
@@ -318,7 +342,7 @@ main > div > section:nth-child(1) > div:last-child {
 .sponsored > div > div:first-child {
 	display: flex;
 	flex-direction: column;
-	height: 50%;
+	height: 70%;
 }
 
 .fa-star {
@@ -343,6 +367,62 @@ main > div > section:nth-child(1) > div:last-child {
   color: #0065FC;
 }
 
+/* fin bloc hebergement et populaires */
+
+/* card */
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  
+  display: flex;
+  border-radius: 20px;
+  background: #FFFFFF;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card h3 {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
+	margin: 0px;
+	margin-bottom: 5px;
+}
+
+.card p {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	margin: 0px;
+}
+
+/* fin card */
+
+
+
+/* bloc activites a marseille */
+main > section:last-child {
+		margin-top: 60px;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 60px;
+}
+
+main > section:last-child > div > h2 {
+	margin-bottom: 19px;
+}
+
+main > section:last-child > div > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 .activites {
 	flex-direction: column;
 	max-width: 302px;
@@ -362,7 +442,10 @@ main > div > section:nth-child(1) > div:last-child {
 	margin-bottom: 21px;
 	padding-left: 19px;
 }
+/* fin bloc activites a marseille */
 
+
+/* footer */
 footer {
 	display: flex;
 	justify-content: space-between;
@@ -391,69 +474,14 @@ footer li {
 	line-height: 19px;
 }
 
-main > section > div > form {
-	display: flex;
-	width: 406px;
-}
+/* fin footer */
 
-main > section > div > form > div {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	background-color: #F2F2F2;
-	width: 50px;
-	height: 49px;
-	border-radius: 15px 0px 0px 15px;
-}
 
-.fa-location-dot {
-	
-}
-
-main > section > div > form > input[type=text] {
-	height: 47px;
-	width: 208px;
-	padding: 0px;
-	background: #FFFFFF;
-	border: 0px;
-	border-top: 1px solid #F2F2F2;
-	border-bottom: 1px solid #F2F2F2;
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 21px;
-	padding-left: 16px;
-}
-
-main > section > div > form > input[type=text]::placeholder {
-	color: #000000;
-}
-
-main > section > div > form > button[type=submit] {
-	width: 132px;
-	height: 49px;
-	border: none;
-	background-color: #0065FC;
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 21px;
-	text-align: center;
-	color: #FFFFFF;
-	padding-left: 16px;
-	padding-right: 16px;
-	border-radius: 0px 20px 20px 0px;
-	cursor: pointer;
-}
-main > section > div > form > button[type=submit]::after {
-	content: "Rechercher";
-}
-.loupe {
-	display: none;
-}
 
 /*	tablette*/
 @media all and (min-width: 768px) and (max-width: 991px) {
 
+/* header nav */
 header > nav > div > ul > li > a {
 	font-weight: 400;
 	font-size: 16px;
@@ -464,7 +492,10 @@ header > nav > div > ul > li > a:hover {
 	color: initial;
 	border-top: initial;
 }
+/* fin header nav */
 
+
+/* intro + search-form + filter-btn */
 .search-filter > div {
 	justify-content: space-around;
 }
@@ -478,7 +509,10 @@ header > nav > div > ul > li > a:hover {
 main > section:first-child {
 	margin-top: 58px;
 }
+/* fin intro + search-form + filter-btn */
 
+
+/* bloc hebergement et les plus populaires */
 main > div {  /* bloc hebergement et populaire */
 	flex-direction: column;
 }
@@ -522,7 +556,9 @@ main > div > section:last-child > div:last-child {
 .sponsored h3 {
 	font-size: 15px;
 }
+/* fin bloc hebergement et les plus populaires */
 
+/* bloc activites a marseille */
 main > section:last-child {
 	margin-top: 70px;
 	margin-bottom: 69px;
@@ -539,7 +575,10 @@ main > section:last-child > div > h2 {
 .activites > img {
 	height: 211px;
 }
+/* fin bloc activites a marseille */
 
+
+/* footer */
 footer {
 	padding-left: 9%;
 }
@@ -547,6 +586,8 @@ footer {
 footer > div {
 	width: 30%;
 }
+/* fin footer */
+
 
 } /*fin tablette*/
 
@@ -561,6 +602,7 @@ body {
 	padding-right: 0px;
 }
 
+/* hearder nav + logo */
 header > nav {
 	flex-direction: column;
 	padding-top: 21px;
@@ -592,7 +634,10 @@ header > nav > div > ul > li > a:hover {
 	margin-bottom: 0px;
 	padding-bottom: 21px;
 }
+/* fin hearder nav + logo */
 
+
+/* intro + search-form + filter-btn */
 main > section > div > form {
 	width: initial;
 }
@@ -650,15 +695,16 @@ main > section > div > form > button[type="submit"]::after {
 	font-size: 11px;
 	line-height: 13px;
 }
+/* fin intro + search-form + filter-btn */
 
+
+/* bloc hebergement et les plus populaires */
 main > div {
 	flex-direction: column-reverse;
 	width: 100%;
 }
 
-/*bloc hebergement*/
-
-main > div > section:first-child {
+main > div > section:first-child { /*bloc hebergement*/
 	align-items: center;
 	width: 100%;
 	padding: initial;
@@ -692,7 +738,6 @@ display: none;
 	margin-bottom: initial;
 	margin-top: 5px;
 }
-
 /*fin bloc hebergement*/
 /*///////////////////*/
 /*bloc populaire*/
@@ -719,6 +764,7 @@ main > div > section:last-child > div:last-child {
 	max-width: 550px;
 }
 /*fin bloc populaire*/
+/* fin bloc hebergement et les plus populaires */
 
 
 /* bloc activites a marseil */
@@ -746,7 +792,6 @@ main > section:last-child > div > div {
 /* fin bloc activites a marseil */
 
 /* footer */
-
 footer {
 	flex-direction: column;
 	justify-content: flex-start;
@@ -762,7 +807,6 @@ footer > div {
 footer ul {
 	margin-bottom: 40px;
 }
-
 /* fin footer */
 
 
