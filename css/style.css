@@ -274,6 +274,7 @@ main > div > section:nth-child(1) > div:last-child {
 
 .hebergements > img {
 	height: 114px;
+	min-height: 114px; /* fix pour chrome */
 	width: auto;
 	object-fit: cover;
 	border: 5px solid #FFFFFF;
@@ -283,6 +284,7 @@ main > div > section:nth-child(1) > div:last-child {
 .sponsored > img {
 	height: 134px;
 	width: 40%;
+	min-width: 40%; /* fix pour chrome */
 	object-fit: cover;
 	border: 5px solid #FFFFFF;
 	border-radius: 20px 0px 0px 20px;
@@ -309,7 +311,7 @@ main > div > section:nth-child(1) > div:last-child {
 	padding-top: 16px;
 	padding-bottom: 12px;
 	margin-left: 10px;
-	margin-right: 5px;
+	margin-right: 22px;
 }
 
 .sponsored > div > div:first-child {
@@ -317,19 +319,6 @@ main > div > section:nth-child(1) > div:last-child {
 	flex-direction: column;
 	height: 50%;
 }
-
-.hebergements > div { /* DOUBLOND ?????  */
-	/*margin: 0px;
-	height: 33%;*/
-}
-
-/*.card > div > div { /*	bloc fa-star*/
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-/*	flex-basis: 100%;*/
-	align-items: center;
-}*/
 
 .fa-star {
 	height: 12px;
@@ -524,6 +513,15 @@ main > div > section:last-child > div:last-child {
 	margin-left: initial;
 }
 
+.sponsored > div {
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.sponsored h3 {
+	font-size: 15px;
+}
+
 main > section:last-child {
 	margin-top: 70px;
 	margin-bottom: 69px;
@@ -618,7 +616,7 @@ main > section > div > form > button[type="submit"]::after {
 
 .search-filter > div {
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: flex-start;
 	height: 117px;
 	width: 100%;
@@ -631,8 +629,7 @@ main > section > div > form > button[type="submit"]::after {
 }
 
 .search-filter > div > div {
-/*	width: 40%;*/
-	min-width: 142px;
+	width: 40%;
 	margin-left: initial;
 	margin-bottom: 17px;
 	font-weight: 700;
@@ -654,7 +651,7 @@ main > div > section:first-child {
 	border-radius: initial;
 	background: initial;
 	padding-top: 26px;
-	padding-bottom: 47px;
+	padding-bottom: calc(47px - 30px);
 }
 
 main > div > section:first-child > div:first-child {
@@ -685,7 +682,7 @@ main > div > section:last-child {
 	padding: initial;
 	border-radius: initial;
 	padding-top: 28px;
-	padding-bottom: 47px;
+	padding-bottom: calc(47px - 33px);
 }
 
 main > div > section:last-child > div:first-child {
@@ -703,6 +700,50 @@ main > div > section:last-child > div:last-child {
 	max-width: 550px;
 }
 /*fin bloc populaire*/
+
+
+/* bloc activites a marseil */
+
+main > section:last-child {
+	margin-bottom: calc(80px - 24px);
+	margin-left: 19px;
+	margin-right: 22px;
+}
+
+main > section:last-child > div > div {
+	flex-direction: column;
+}
+
+.activites {
+	width: 100%;
+	margin-bottom: 24px;
+}
+
+.activites > img {
+	height: 134px;
+}
+
+/* fin bloc activites a marseil */
+
+/* footer */
+
+footer {
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-left: 30px;
+	padding-top: 45px;
+}
+
+footer > div {
+	width: initial;
+	margin-top: initial;
+}
+
+footer ul {
+	margin-bottom: 40px;
+}
+
+/* fin footer */
 
 
 } /*fin mobile*/
