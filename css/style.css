@@ -7,10 +7,13 @@ body {
 	justify-content: center;
 	font-family: 'Raleway', sans-serif;
 	font-style: normal;
+/*	width: 100%;*/
 	max-width: 1400px;
-	margin: 0px auto;
+/*	margin: 0px auto;*/
 	padding-left: 50px;
 	padding-right: 50px;
+/*	margin-left: 50px;*/
+/*	margin-right: 50px;*/
 }
 
 h1 {
@@ -239,6 +242,7 @@ main > div > section:nth-child(1) > div:last-child {
 	line-height: 19px;
 	color: #000000;
 	margin: 0px;
+	margin-bottom: 5px;
 }
 
 .card p {
@@ -300,7 +304,7 @@ main > div > section:nth-child(1) > div:last-child {
 }
 
 .hebergements > div > div:last-child {
-	margin-bottom: 11px;
+	margin-bottom: 7px;
 }
 
 .sponsored > div {
@@ -592,6 +596,10 @@ header > nav > div > ul > li > a:hover {
 	padding-bottom: 21px;
 }
 
+main > section > div > form {
+	width: initial;
+}
+
 .loupe {
 	display: inline;
 }
@@ -599,6 +607,15 @@ header > nav > div > ul > li > a:hover {
 main > section:first-child {
 	padding-left: 20px;
 	padding-right: 22px;
+}
+
+main > section > div > form > div {
+	min-width: 50px;
+}
+
+main > section > div > form > input[type="text"] {
+	width: 100%;
+	max-width: 208px;
 }
 
 main > section > div > form > button[type="submit"] {
@@ -674,6 +691,11 @@ display: none;
 	max-width: 550px;
 }
 
+.hebergements > div > div:last-child {
+	margin-bottom: initial;
+	margin-top: 5px;
+}
+
 /*fin bloc hebergement*/
 /*///////////////////*/
 /*bloc populaire*/
@@ -715,6 +737,7 @@ main > section:last-child > div > div {
 }
 
 .activites {
+	max-width: initial;
 	width: 100%;
 	margin-bottom: 24px;
 }
