@@ -204,27 +204,14 @@ main > section > div > form > button[type=submit]::after {
 .loupe {
 	display: none;
 }
-/* fin intro + search-form + search-btn */
 
-
-
-
-
-
-
-main > section > p { /*	AVOIR section avec le changement en div !!!!!*/
+main > section > p {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
 }
 
-
-
-
-
-
-
-
+/* fin intro + search-form + search-btn */
 
 
 /* bloc hebergement et populaires */
@@ -236,6 +223,14 @@ main > div > section > div {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+}
+
+main > div > section > div > a {
+	display: block;
+	width: 32%;
+	text-decoration: none;
+	color: black;
+	padding-bottom: 30px;
 }
 
 main > div > section:first-child {  /*	bloc hebergement*/
@@ -254,7 +249,7 @@ main > div > section:first-child {  /*	bloc hebergement*/
 main > div > section:last-child {  /*	bloc populaire*/
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+/*	justify-content: space-between;*/
 	align-items: center;
 	background: #F2F2F2;
 	border-radius: 20px;
@@ -269,6 +264,15 @@ main > div > section:last-child > div:first-child {
 	max-width: 343px;
 }
 
+main > div > section:last-child > div:last-child {
+	flex-direction: column;
+}
+
+main > div > section:last-child > div:last-child > a {
+	width: 100%;
+	padding-bottom: 33px;
+}
+
 footer > div > div,
 main > div > section:nth-child(1) > div:last-child {
 	margin-top: 10px;
@@ -281,18 +285,18 @@ main > div > section:nth-child(1) > div:last-child {
 .hebergements {
 	flex-direction: column;
 	max-width: 246px;
-	width: 32%;
+/*	width: 32%;*/
 /*  height: 199px;*/
 	min-height: 199px;
 /*	height: min-content;*/
-	margin-bottom: 30px;
+/*	margin-bottom: 30px;*/
 }
 
 .sponsored {
 	width: 100%;
 	max-width: 343px;
   height: 144px;
-  margin-bottom: 33px;
+/*  margin-bottom: 33px;*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -371,6 +375,7 @@ main > div > section:nth-child(1) > div:last-child {
 
 /* card */
 .card {
+	height: 100%;
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -413,6 +418,12 @@ main > section:last-child {
 		margin-bottom: 60px;
 }
 
+main > section:last-child a {
+	width: 23%;
+	text-decoration: none;
+	color: black;
+}
+
 main > section:last-child > div > h2 {
 	margin-bottom: 19px;
 }
@@ -426,7 +437,7 @@ main > section:last-child > div > div {
 .activites {
 	flex-direction: column;
 	max-width: 302px;
-	width: 23%;
+/*	width: 23%;*/
 }
 
 .activites > img {
@@ -541,8 +552,12 @@ main > div > section:last-child > div:last-child {
 	width: 100%;
 }
 
-.sponsored {
+main > div > section:last-child > div:last-child > a {
 	width: 32%;
+}
+
+.sponsored {
+/*	width: 32%;*/
 	max-width: 252px;
 	margin-right: initial;
 	margin-left: initial;
@@ -587,7 +602,6 @@ footer > div {
 	width: 30%;
 }
 /* fin footer */
-
 
 } /*fin tablette*/
 
@@ -723,6 +737,11 @@ main > div > section:first-child > div:nth-child(2) {
 	flex-direction: column;
 	align-items: center;
 	width: 90%;
+	max-width: 550px;
+}
+
+main > div > section:first-child > div:nth-child(2) > a {
+	width: 100%;
 }
 
 main > div > section:first-child > div:last-child {
@@ -779,6 +798,10 @@ main > section:last-child > div > div {
 	flex-direction: column;
 }
 
+main > section:last-child a {
+	width: initial;
+}
+
 .activites {
 	max-width: initial;
 	width: 100%;
@@ -808,6 +831,5 @@ footer ul {
 	margin-bottom: 40px;
 }
 /* fin footer */
-
 
 } /*fin mobile*/
