@@ -472,6 +472,11 @@ footer li {
 	line-height: 19px;
 }
 
+footer > div > ul > li > a {
+	color: #000000;
+	text-decoration: none;
+}
+
 /* fin footer */
 
 
