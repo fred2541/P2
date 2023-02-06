@@ -790,6 +790,10 @@ main > section:last-child a {
 	width: initial;
 }
 
+main > section:last-child > div > h2 {
+	width: 200px;
+}
+
 .activites {
 	max-width: initial;
 	width: 100%;
